@@ -83,6 +83,7 @@ public class SimpleServer extends AbstractServer {
 				// message received: "Good morning"
 				// message sent: "Good morning"
 				//see code for changing submitters IDs for help
+				message.setMessage(request);
 				sendToAllClients(message);
 			}
 		} catch (IOException e1) {
